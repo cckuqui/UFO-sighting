@@ -23,7 +23,7 @@ For this exercise I used a JavaScript object containing eye-witness reports of U
 
 ## Results
 
-![Result]()
+![Result](images/deployed_site.gif)
 
 ### Copyright
 
