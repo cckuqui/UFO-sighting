@@ -6,7 +6,7 @@ var tbody = d3.select("tbody");
 
 // Build table
 function buildTable(data) {
-  // Clear table
+  // Clear previous table
   tbody.html("");
 
   // Loop through each object in the data and append rows for each value
@@ -19,7 +19,7 @@ function buildTable(data) {
   });
 }
 
-// Keep Track of all filters
+// Object to keep filters
 var filters = {};
 
 function updateFilters() {
