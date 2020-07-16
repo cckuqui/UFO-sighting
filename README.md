@@ -6,7 +6,7 @@
 
 For this exercise I used a JavaScript object containing eye-witness reports of UFO sightings with:
 
-* Datetime
+* Date/time
 * City
 * State
 * Country
