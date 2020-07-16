@@ -4,9 +4,22 @@
 
 ## Data
 
-For this exercise I used a JavaScript object containing eye-witness reports of UFO sightings 
+For this exercise I used a JavaScript object containing eye-witness reports of UFO sightings with:
+
+* Datetime
+* City
+* State
+* Country
+* Shape
+* Duration in Minutes
+* Comments
+
+![Preview of data](images/prev_data.png)
 
 ### Objective
+
+* Append table with all data into the webpage
+* 
 
 ## Results
 
