@@ -4,7 +4,7 @@ var tableData = data;
 // Obtain table references
 var tbody = d3.select("tbody");
 
-// Build initial table
+// Build table
 function buildTable(data) {
   // Clear table
   tbody.html("");
