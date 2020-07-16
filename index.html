@@ -1,80 +1,90 @@
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
 
-    <head>
-    <meta charset="utf-8">
-    <title>UFO Finder</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    </head>
+<head>
+  <meta charset="utf-8">
+  <title>UFO Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/ufo.svg">
+</head>
 
-    <body>
-    <div class="wrapper">
-        <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">UFO Sightings
-                <img class="nav-ufo" src="images/ufo.svg">
-            </a>
-            </div>
-        </div>
-        </nav>
-        <div class="hero text-center">
-        <h1>UFO Sightings</h1>
-        <p>The Truth is Out There</p>
-        </div>
-        <div class="container">
-        <div class="row margin-top-50">
-            <div class="col-md-2">
-            <aside class="filters">
-                <div class="panel panel-default">
-                <div class="panel-heading">Filter Search</div>
-                <div class="panel-body">
-                    <form id='form'>
-                    <div class="form-group">
-                        <ul class="list-group" id="filters">
-                        <li class="filter list-group-item">
-                            <label for="date">Enter a Date</label>
-                            <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
-                        </li>
-                        </ul>
-                    </div>
-                    <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                    </form>
-                </div>
-                </div>
-            </aside>
-            </div>
-            <div class="col-md-10">
-            <div id="table-area" class="">
-                <table id="ufo-table" class="table table-striped">
-                <thead>
-                    <tr>
-                    <th class="table-head">Date</th>
-                    <th class="table-head">City</th>
-                    <th class="table-head">State</th>
-                    <th class="table-head">Country</th>
-                    <th class="table-head">Shape</th>
-                    <th class="table-head">Duration</th>
-                    <th class="table-head">Comments</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-                </table>
-            </div>
-            </div>
-        </div>
-        </div>
-        <footer class="footer">
-        <span class="bottom">UFO Sightings</span>
-        </footer>
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html">
+        <img class="nav-ufo" src="images/ufo.svg">
+        UFO Sightings
+      </a>
+    </nav>
+    <div class="hero text-center">
+      <h1>UFO Sightings</h1>
+      <p>The Truth is Out There</p>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-    <script src="resources/data.js"></script>
-    <script src="app.js"></script>
-    </body>
+    <div class="container">
+      <br>
+      <br>
+      <h2>Use the form on the left to filter the table</h2>
+      <br>
+      <div class="row">
+        <br>
+        <div class="col-md-2">
+          <br>
+            <div class="card border-primary">
+              <h4 class="card-header">Filter Search</h4>
+              <ul class="list-group list-group-flush" id="filters">
+                <li class="filter list-group-item">Enter a Date
+                  <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                </li>
+                <li class="filter list-group-item">Enter a City
+                  <input class="form-control" id="city" type="text" placeholder="roswell">
+                </li>
+                <li class="filter list-group-item">Enter a State
+                  <input class="form-control" id="state" type="text" placeholder="ca">
+                </li>
+                <li class="filter list-group-item">Enter a Country
+                  <input class="form-control" id="country" type="text" placeholder="us">
+                </li>
+                <li class="filter list-group-item">Select a Shape
+                  <input class="form-control" id="shape" type="text" placeholder="circle">
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-md-10">
+          <br>
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Date</th>
+                  <th scope="col">City</th>
+                  <th scope="col">State</th>
+                  <th scope="col">Country</th>
+                  <th scope="col">Shape</th>
+                  <th scope="col">Duration</th>
+                  <th scope="col">Comments</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    </html>
+<div class="footer-copyright text-center py-3">
+  Site created by <a href='http://www.github.com/cckuqui'>Cristina Bardan</a> - <a href='https://github.com/cckuqui/UFO-sighting'>Link to this repository</a>
+</div>
+
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="resources/data.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
