@@ -1,7 +1,7 @@
-// from data.js
+// Import data
 var tableData = data;
 
-// get table references
+// Obtain table references
 var tbody = d3.select("tbody");
 
 function buildTable(data) {
