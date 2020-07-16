@@ -19,7 +19,7 @@ For this exercise I used a JavaScript object containing eye-witness reports of U
 ### Objective
 
 * Append table with all data into the webpage
-* Create filters for datetime, city, state, country, and shape
+* Create filters for date/time, city, state, country, and shape
 
 ## Results
 
